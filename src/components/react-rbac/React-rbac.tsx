@@ -3,7 +3,7 @@ import { Checkbox } from 'antd'
 import { useState } from 'react';
 import './react-rbac.scss'
 import { reactRbacProps } from './react-rbac.types';
-const RoleTable: React.FC = ({actions,roles,rowSelectAll,rowSelectAllLabel,onRbacChange,specialChar}:reactRbacProps) => {
+const RoleTable= ({actions,roles,rowSelectAll,rowSelectAllLabel,onRbacChange,specialChar}:reactRbacProps) => {
   const [checkedItems, setCheckedItems] = useState<string[]>([]);
   onRbacChange(checkedItems)
   const handleCheckboxChange = (
