@@ -10,9 +10,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "antd": "^5.14.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "sass": "^1.71.0",
+    "scss": "^0.2.4"
   },
+  "keywords": [
+    "react",
+    "rbac",
+    "table"
+  ],
+  "author": "Abdelkaderbzz",
+  "license": "MIT",
   "devDependencies": {
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
