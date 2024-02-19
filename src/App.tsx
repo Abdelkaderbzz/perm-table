@@ -7,7 +7,7 @@ function App() {
         actions={['get', 'create', 'update']}
         roles={['domain', 'user', 'role']}
         specialChar={'_'}
-        rowSelectAll={true}
+        rowSelectAll={false}
         rowSelectAllLabel={'All'}
         onRbacChange={(value:string[])=>console.log(value,'value')}
       />
