@@ -1,4 +1,4 @@
-export interface reactRbacProps
+export interface permTableProps
 {
   actions: string[],
   roles: string[],

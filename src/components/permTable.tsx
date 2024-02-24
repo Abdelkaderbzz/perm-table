@@ -1,9 +1,10 @@
 
 import { Checkbox } from 'antd'
 import { useState } from 'react';
-import './react-rbac.scss'
-import { reactRbacProps } from './react-rbac.types';
-const RoleTable= ({actions,roles,rowSelectAll,rowSelectAllLabel,onRbacChange,specialChar}:reactRbacProps) => {
+import './perTable.scss'
+import { permTableProps } from './permTable.types';
+
+const PermTable= ({actions,roles,rowSelectAll,rowSelectAllLabel,onRbacChange,specialChar}:permTableProps) => {
   const [checkedItems, setCheckedItems] = useState<string[]>([]);
   onRbacChange(checkedItems)
   const handleCheckboxChange = (
@@ -80,4 +81,4 @@ const RoleTable= ({actions,roles,rowSelectAll,rowSelectAllLabel,onRbacChange,spe
   )
 }
 
-export default RoleTable
+export default PermTable
