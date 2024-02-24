@@ -1,41 +1,18 @@
 {
-  "compilerOptions": {
-    "target": "ES2020",
-    "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    /* Bundler mode */
-    "moduleResolution": "Node",
-    // "allowImportingTsExtensions": true,
-    // "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "declaration": true,
+        "jsx": "react",
+        "lib": ["es5", "es2015", "es2016", "dom", "esnext"],
+        "target": "es2016",
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "noImplicitAny": true,
 
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-
-    "baseUrl": ".",
-    "paths": {
-      "@src/*": ["./src/*"],
-      "@hook/*": ["./src/hook/*"],
-      "@utils/*": ["./src/utils/*"],
-      "@store/*": ["./src/store/*"],
-      "@pages/*": ["./src/pages/*"],
-      "@layout/*": ["./src/layout/*"],
-      "@assets/*": ["./src/assets/*"],
-      "@routes/*": ["./src/routes/*"],
-      "@context/*": ["./src/context/*"],
-      "@features/*": ["./src/features/*"],
-      "@components/*": ["./src/components/*"]
+        "forceConsistentCasingInFileNames": true,
+        "outDir": "dist/esm",
+        "strict": true,
+        "skipLibCheck": true,
+        "sourceMap": true
     }
-  },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }],
-  "types": ["vite/client"]
 }

@@ -1,3 +1,4 @@
+import React from 'react';
 import { Checkbox } from 'antd';
 import { useState } from 'react';
 import './perTable.scss';
