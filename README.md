@@ -68,8 +68,8 @@ Contributions to the `perm-table` are welcome! Please ensure that your code adhe
 
 ## GitHub Repository
 
-Find the source code for PermTable on GitHub: PermTable Repository.
+You can find the source code for the `PermTable` component on GitHub at [https://github.com/Abdelkaderbzz/perm-table](https://github.com/Abdelkaderbzz/perm-table).
 
 ## License
 
-This project is licensed under the MIT License. Feel free to contribute and use PermTable in your projects!
+This project is licensed under the MIT License.
