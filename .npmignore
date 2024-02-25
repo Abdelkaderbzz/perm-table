@@ -1,8 +1,0 @@
-# Ignore everything
-*
-
-# Allow the dist directory
-!dist/
-
-# Allow the package.json file
-!package.json
