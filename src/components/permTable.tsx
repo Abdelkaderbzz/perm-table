@@ -1,7 +1,7 @@
 import React from 'react';
 import { Checkbox } from 'antd';
 import { useState } from 'react';
-import './perTable.scss';
+import './permTable.scss';
 import { permTableProps } from './permTable.types';
 
 const PermTable = ({ actions, roles, rowSelectAll, rowSelectAllLabel, onRbacChange, specialChar }: permTableProps) => {
@@ -21,7 +21,6 @@ const PermTable = ({ actions, roles, rowSelectAll, rowSelectAllLabel, onRbacChan
     const handleRowCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>, role: string) => {
         const isChecked = event.target.checked;
         const rowItems = actions.map((action) => `${action}${specialChar}${role}`);
-
         if (isChecked) {
             setCheckedItems([...checkedItems, ...rowItems]);
         } else {
