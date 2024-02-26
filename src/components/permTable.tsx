@@ -1,5 +1,4 @@
 import React from "react";
-import { Checkbox } from "antd";
 import { useState } from "react";
 import { permTableProps } from "./permTable.types";
 
@@ -10,8 +9,11 @@ const PermTable = ({
   rowSelectAllLabel,
   onRbacChange,
   specialChar,
+  permissions,
 }: permTableProps) => {
-  const [checkedItems, setCheckedItems] = useState<string[]>([]);
+  console.log(permissions, "permissions");
+  const [checkedItems, setCheckedItems] = useState<string[]>(permissions || []);
+  console.log(checkedItems, "checkedItems");
   onRbacChange(checkedItems);
   const handleCheckboxChange = (
     event: React.ChangeEvent<HTMLInputElement>,
@@ -118,7 +120,8 @@ const PermTable = ({
                     borderBottom: "1px solid #ddd",
                   }}
                 >
-                  <Checkbox
+                  <input
+                    type={"checkbox"}
                     checked={checkedItems.includes(
                       `${action}${specialChar}${role}`,
                     )}
@@ -141,7 +144,8 @@ const PermTable = ({
                     borderBottom: "1px solid #ddd",
                   }}
                 >
-                  <Checkbox
+                  <input
+                    type={"checkbox"}
                     checked={actions.every((action) =>
                       checkedItems.includes(`${action}${specialChar}${role}`),
                     )}
