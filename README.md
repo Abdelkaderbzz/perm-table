@@ -13,8 +13,7 @@ Welcome to the PermTable component README! This document provides a comprehensiv
 
 The `PermTable` component relies on the following dependencies:
 
-- **Antd**:  `Utilizes Antd's CheckboxComponent for checkbox functionality`.
-- **scss**:  `Styling powered by SCSS for enhanced customization`.
+- **css**:  `Styling powered by css for enhanced customization`.
 - **React**: Built with React for efficient component-based architecture.
 
 ## Installation
@@ -39,6 +38,7 @@ const App = () => {
       roles={['user', 'role', 'post', 'comment']}
       onRbacChange={handleRbacChange}
       rowSelectAll={true}
+      permissions={['create_user','create_role']}
       rowSelectAllLabel={'All'}
       specialChar={'_'}
     />

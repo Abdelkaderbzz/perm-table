@@ -5,4 +5,5 @@ export interface permTableProps {
   rowSelectAll: boolean;
   rowSelectAllLabel: string;
   specialChar: string;
+  permissions?: string[];
 }
