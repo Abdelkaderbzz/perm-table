@@ -11,7 +11,9 @@ const PermTable = ({
   specialChar,
   permissions,
 }: permTableProps) => {
-  const [checkedItems, setCheckedItems] = useState<string[]>(permissions||[]);
+  console.log(permissions, "permissions");
+  const [checkedItems, setCheckedItems] = useState<string[]>(permissions || []);
+  console.log(checkedItems, "checkedItems");
   onRbacChange(checkedItems);
   const handleCheckboxChange = (
     event: React.ChangeEvent<HTMLInputElement>,
@@ -119,7 +121,7 @@ const PermTable = ({
                   }}
                 >
                   <input
-                    type={'checkbox'}
+                    type={"checkbox"}
                     checked={checkedItems.includes(
                       `${action}${specialChar}${role}`,
                     )}
@@ -143,7 +145,7 @@ const PermTable = ({
                   }}
                 >
                   <input
-                    type={'checkbox'}
+                    type={"checkbox"}
                     checked={actions.every((action) =>
                       checkedItems.includes(`${action}${specialChar}${role}`),
                     )}
