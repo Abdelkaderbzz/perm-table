@@ -1,2 +1,2 @@
-import PermTable from './components/permTable';
+import PermTable from "./components/permTable";
 export default PermTable;
